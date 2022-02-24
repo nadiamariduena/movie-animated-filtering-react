@@ -29,7 +29,7 @@
 <br>
 <br>
 
-### The Api 🥭
+## The Api 🥭
 
 #### I will be using the same API (from the previous tutorial)
 
@@ -45,7 +45,7 @@
 
 <br>
 
-[<img src="./src/img/enpoint-api.gif"/>]()
+[<img src="./src/img/enpoint-api.gif"/>](https://developers.themoviedb.org/3/search/search-movies)
 
 <br>
 
