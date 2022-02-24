@@ -65,4 +65,35 @@ REACT_APP_TMDB_KEY=long api code here
 
 <br>
 
+### Add the API here
+
+- Every time you are requesting something from an external API, you will need <u>**async await**</u>, and the reason for that is because you can have different type of issues, issues that can cause the data not being delivered in time when the user opens the page for example.
+
+<br>
+
+- One of the reasons can be **"slow internet connection", latency ...etc**
+
+```javascript
+const Home = () => {
+  // without async | WRONG 🔴
+  const fetchPopular = () => {
+    //   api goes here / fetching data from the api
+  };
+
+//
+  // with async | GOOD  ✋
+  const fetchPopular = async () => {
+    //   api goes here / fetching data from the api
+  };
+```
+
+<br>
+
+#### [Latency ](<https://en.wikipedia.org/wiki/Latency_(engineering)>)
+
+> **Latency meaning in networking** is best thought of as the amount of time it takes for a packet of data to be captured, transmitted, processed through multiple devices, then received at its destination and decoded. ... Latency is measured in milliseconds, or during speed tests, it's referred to as a ping rate.
+
+<br>
+<br>
+
 #### ⚠️ After you add the API, restart the app.
