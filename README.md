@@ -101,7 +101,7 @@ REACT_APP_TMDB_KEY=long api code here
 
 <br>
 
-### Adding the API
+### Adding the <u>API</u> to the app
 
 <br>
 
@@ -110,6 +110,8 @@ REACT_APP_TMDB_KEY=long api code here
 <br>
 
 - One of the reasons can be **"slow internet connection", latency ...etc**
+
+<br>
 
 ```javascript
 const Home = () => {
@@ -132,6 +134,32 @@ const Home = () => {
 > **Latency meaning in networking** is best thought of as the amount of time it takes for a packet of data to be captured, transmitted, processed through multiple devices, then received at its destination and decoded. ... Latency is measured in milliseconds, or during speed tests, it's referred to as a ping rate.
 
 <br>
+<br>
+
+### Add it like so:
+
+```javascript
+// API
+const { REACT_APP_TMDB_KEY } = process.env;
+
+//
+const Home = () => {
+  //
+  //
+  const fetchPopular = async () => {
+    //
+    const data = await fetch(
+      `https://api.themoviedb.org/3/movie/popular?api_key=${REACT_APP_TMDB_KEY}&language=en-US&page=1&include_adult=false`
+    );
+    //
+  };
+```
+
+<br>
+<br>
+
+---
+
 <br>
 
 #### ⚠️ After you add the API, restart the app.
