@@ -29,9 +29,15 @@
 <br>
 <br>
 
-## The Api 🥭
+# The Api 🥭
 
 #### I will be using the same API (from the previous tutorial)
+
+<br>
+
+#### 🔴 Remember:
+
+> **You need to request the API key**, you will have to fill a form about why do and in what do you want to use, after that you will receive your api in your email, or just refresh the page
 
 <br>
 
@@ -75,19 +81,17 @@ https://api.themoviedb.org/3/search/movie?api_key=<<api_key>>&language=en-US&pag
 
 <br>
 
-[<img src="./src/img/enpoint-api.gif"/>](https://developers.themoviedb.org/3/search/search-movies)
+[<img src="./src/img/options-endpint-get-populargif"/>](https://developers.themoviedb.org/3/search/search-movies)
 
 <br>
 
 <br>
 
-#### 🔴 Remember:
-
-> **You need to request the API key**, you will have to fill a form about why do and in what do you want to use, after that you will receive your api in your email, or just refresh the page
+---
 
 <br>
 
-#### Once you have the API:
+## Once you have the API:
 
 - Create a **.env.local** and **store your API** there like so:
 
@@ -97,7 +101,9 @@ REACT_APP_TMDB_KEY=long api code here
 
 <br>
 
-### Add the API here
+### Adding the API
+
+<br>
 
 - Every time you are requesting something from an external API, you will need <u>**async await**</u>, and the reason for that is because you can have different type of issues, issues that can cause the data not being delivered in time when the user opens the page for example.
 
