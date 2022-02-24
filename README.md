@@ -101,6 +101,11 @@ REACT_APP_TMDB_KEY=long api code here
 
 <br>
 
+##### ⚠️ After you add the API inside the .env.local , restart the app.
+
+<br>
+<br>
+
 ### Adding the <u>API</u> to the app
 
 <br>
@@ -138,6 +143,8 @@ const Home = () => {
 
 ### Add it like so:
 
+- Now that **data** contains the **movies url**, we will need to convert this data to a JSON format
+
 ```javascript
 // API
 const { REACT_APP_TMDB_KEY } = process.env;
@@ -152,14 +159,10 @@ const Home = () => {
       `https://api.themoviedb.org/3/movie/popular?api_key=${REACT_APP_TMDB_KEY}&language=en-US&page=1&include_adult=false`
     );
     //
+
   };
 ```
 
 <br>
-<br>
-
----
-
-<br>
-
-#### ⚠️ After you add the API, restart the app.
+ 
+### Convert this data to a JSON format
