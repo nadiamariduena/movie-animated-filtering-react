@@ -39,7 +39,13 @@
 
 - Then click again in side bar, for **search the movie**
 
-##### get/search/movie
+<br>
+
+##### ENDPOINT: get/search/movie ✋
+
+<br>
+
+[<img src="./src/img/enpoint-api.gif"/>]()
 
 <br>
 
