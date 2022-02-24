@@ -41,11 +41,43 @@
 
 <br>
 
-##### ENDPOINT: get/search/movie ✋
+<br>
+
+### Search
+
+- This is the endpoint for that:
+
+#### ENDPOINT 1.: get/search/movie ✋
+
+```javascript
+https://api.themoviedb.org/3/search/movie?api_key=<<api_key>>&language=en-US&page=1&include_adult=false
+```
 
 <br>
 
 [<img src="./src/img/enpoint-api.gif"/>](https://developers.themoviedb.org/3/search/search-movies)
+
+<br>
+
+## Popular
+
+##### You can also choose something else, like for example ["Get Popular"](https://developers.themoviedb.org/3/movies/get-popular-movies)
+
+<br>
+
+- This is the endpoint for that:
+
+#### ENDPOINT 2.: GET /movie/popular
+
+```javascript
+ https://api.themoviedb.org/3/movie/popular?api_key=<<api_key>>&language=en-US&page=1
+```
+
+<br>
+
+[<img src="./src/img/enpoint-api.gif"/>](https://developers.themoviedb.org/3/search/search-movies)
+
+<br>
 
 <br>
 

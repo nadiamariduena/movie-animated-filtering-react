@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { mobile, mobileM, tablet } from "../responsive";
 
-//
+// API
+const { REACT_APP_TMDB_KEY } = process.env;
 //
 
 const Wrapper = styled.div`
@@ -32,6 +33,9 @@ const Home = () => {
   //
   const fetchPopular = async () => {
     //
+    const data = await fetch(
+      `https://api.themoviedb.org/3/movie/popular?api_key=${REACT_APP_TMDB_KEY}&language=en-US&page=1&include_adult=false`
+    );
     //
   };
 
