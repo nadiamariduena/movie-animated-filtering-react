@@ -180,3 +180,7 @@ const fetchPopular = async () => {
   const movies = await data.json(); ✋ // converting the data
 };
 ```
+
+<br>
+
+#### Now we need to store this data somewhere and make that the function above with the fetched DATA "runs", as for now its not doing anything.
