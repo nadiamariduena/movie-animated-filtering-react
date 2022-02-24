@@ -165,4 +165,18 @@ const Home = () => {
 
 <br>
  
-### Convert this data to a JSON format
+#### Convert this data to a JSON format
+
+<br>
+
+```javascript
+//
+const fetchPopular = async () => {
+  //
+  const data = await fetch(
+    `https://api.themoviedb.org/3/movie/popular?api_key=${REACT_APP_TMDB_KEY}&language=en-US&page=1&include_adult=false`
+  );
+  //
+  const movies = await data.json(); ✋ // converting the data
+};
+```

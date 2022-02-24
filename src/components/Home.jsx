@@ -37,6 +37,7 @@ const Home = () => {
       `https://api.themoviedb.org/3/movie/popular?api_key=${REACT_APP_TMDB_KEY}&language=en-US&page=1&include_adult=false`
     );
     //
+    const movies = await data.json();
   };
 
   //
