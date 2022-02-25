@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { mobile, mobileM, tablet } from "../responsive";
-import Movie from "./Movie";
+import MovieCard from "./MovieCard";
 
 // API
 const { REACT_APP_TMDB_KEY } = process.env;
@@ -94,7 +94,7 @@ const Home = () => {
           {" "}
           {popular.map((movie) => (
             <>
-              <Movie key={movie.id} movie={movie} />
+              <MovieCard key={movie.id} movie={movie} />
             </>
           ))}
         </PopularMovies>
