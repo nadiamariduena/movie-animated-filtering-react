@@ -552,9 +552,10 @@ const PopularMovies = styled.div`
 
 <br>
 
-##### ⚠️ the grid will not work like it shoudl if the parent div contain a display: flex
+#### ⚠️ the grid will not work like it should, if the parent div contains a display: flex... like here below so be careful
 
 ```javascript
+// before
 const Wrapper = styled.div`
   width: 100vw;
   min-height: 100vh;
@@ -564,4 +565,17 @@ const Wrapper = styled.div`
   align-items: center;
   background: red;
 `;
+//after
+const Wrapper = styled.div`
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0 0 100px 0;
+  background: #fceba0;
+`;
 ```
+
+<br>
+
+##### Here you can see it, how the grid looks when the display flex is on the parent and how it looks when i remove it
+
+[<img src="./src/img/displayflex-clash-grid.gif"/>]()
