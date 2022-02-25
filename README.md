@@ -460,3 +460,13 @@ const Movie = ({ movie  ✋}) => {
 
 export default Movie;
 ```
+
+<br>
+
+#### Here for example, we cannot do this
+
+- In normal times when you want to show an image coming from json, you just have to do this **movie.img** , and that will be all, but since we are using an **API** , we have to **prepend** the url of the image
+
+```javascript
+<img src={movie.poster_path} alt="" />
+```
