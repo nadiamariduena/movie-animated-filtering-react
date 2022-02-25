@@ -723,3 +723,8 @@ const MovieCard = ({ movie }) => {
 
 export default MovieCard;
 ```
+
+<br>
+<br>
+
+[<img src="./src/img/preview-2.gif"/>]()
