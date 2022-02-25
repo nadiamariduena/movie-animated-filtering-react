@@ -11,9 +11,9 @@ const { REACT_APP_TMDB_KEY } = process.env;
 const Wrapper = styled.div`
   width: 100vw;
   min-height: 100vh;
-  padding: 0 0 20px 0;
+  padding: 0 0 60px 0;
   text-align: center;
-
+  background: #0f0f0f;
   h1 {
     padding: 10px 0;
     font-size: calc(25px + 1.8vmin);
@@ -26,7 +26,6 @@ const Wrapper = styled.div`
 //
 const AddContent = styled.div`
   padding: 0px 0 20px 0;
-  background: #0f0f0f;
 `;
 
 //
@@ -37,7 +36,7 @@ const PopularMovies = styled.div`
   grid-column-gap: 1rem;
   grid-row-gap: 2rem;
   margin-top: 40px;
-  padding: 40px 0;
+  padding: 40px 40px;
   /*  */
   img {
     width: 100%;

@@ -4,12 +4,11 @@ import styled from "styled-components";
 //
 //
 const FilterContainer = styled.div`
-  margin-top: 40px;
-  padding: 20px 0;
-  height: 30vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #f7f4e7;
 `;
 const Button = styled.button`
   margin: 0 3px;

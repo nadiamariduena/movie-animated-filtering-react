@@ -198,3 +198,7 @@ setPopular(movies.results);
 //
 setFiltered(movies.results); ✋
 ```
+
+##### No lets see if we can see the second state on the console
+
+[<img src="./src/img/preview-3-buttons_filter.gif"/>]()
