@@ -438,3 +438,25 @@ return (
   </Wrapper>
 );
 ```
+
+<br>
+<br>
+
+#### Now lets access the data from the code above inside the CARD component through the key
+
+- movie={movie}
+
+```javascript
+import React from "react";
+
+const Movie = ({ movie  ✋}) => {
+  return (
+    <div>
+      <h2>{movie.title}</h2> ✋
+
+    </div>
+  );
+};
+
+export default Movie;
+```
