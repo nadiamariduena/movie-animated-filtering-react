@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { mobile, mobileM, tablet } from "../responsive";
+// import { mobile, mobileM, tablet } from "../responsive";
 
 const Header = styled.header`
   width: 100vw;

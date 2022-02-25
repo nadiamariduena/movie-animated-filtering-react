@@ -147,3 +147,34 @@ Check the render method of `Home`. See https://reactjs.org/link/warning-keys for
   ))}
 </PopularMovies>
 ```
+
+<br>
+<br>
+
+# 🐖
+
+## Create a new state
+
+- 1. This **new** state will serve to **copy everything** from the following variable
+
+```javascript
+ const [popular
+```
+
+<br>
+
+- 2. But will filters out **the elements or the movies** based in what we are clicking on
+
+<br>
+
+##### the new state
+
+```javascript
+const [filtered, setFiltered] = useState([]);
+```
+
+<br>
+
+#### Recapitulation:
+
+> So this new **variable/state** called **filtered** is going to copy all from the state variable **popular** but will filter out **the elements or the movies** based in what we are clicking on

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import { mobile, mobileM, tablet } from "../responsive";
+// import { mobile, mobileM, tablet } from "../responsive";
 import { Filter } from "./Filter";
 import MovieCard from "./MovieCard";
 
@@ -94,11 +94,10 @@ const Home = () => {
       <Filter />
       <AddContent>
         <PopularMovies>
-          {" "}
           {popular.map((movie) => (
-            <>
-              <MovieCard key={movie.id} movie={movie} />
-            </>
+            <div key={movie.id}>
+              <MovieCard movie={movie} />
+            </div>
           ))}
         </PopularMovies>
       </AddContent>{" "}
