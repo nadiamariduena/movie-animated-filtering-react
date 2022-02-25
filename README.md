@@ -312,9 +312,11 @@ total_results: 649888
 <br>
 <br>
 
+### With <u>setPopular(movies.results)</u> You will be able to see specifically the 'results'
+
 ```javascript
 const movies = await data.json();
-console.log(movies);
+console.log(movies); //just to see the object in the console
 setPopular(movies.results);
 ```
 
