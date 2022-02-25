@@ -463,10 +463,23 @@ export default Movie;
 
 <br>
 
+# ⚠️
+
 #### Here for example, we cannot do this
 
 - In normal times when you want to show an image coming from json, you just have to do this **movie.img** , and that will be all, but since we are using an **API** , we have to **prepend** the url of the image
 
 ```javascript
-<img src={movie.poster_path} alt="" />
+<img src={movie.poster_path} alt={movie.title} />
+```
+
+<br>
+
+##### comparing to the other [ project](https://github.com/nadiamariduena/movie-watchlist-reacthooks-context-api) i made before this:
+
+- this is a snipped of the other code ([compare the code here ](https://github.com/nadiamariduena/movie-watchlist-reacthooks-context-api/blob/master/src/components/ResultCards.jsx))
+
+```javascript
+src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`}
+                alt={`${movie.title} Poster`}
 ```
