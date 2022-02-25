@@ -256,7 +256,15 @@ const Home = () => {
 
 > **popular** is like a **variable** and **setPopular** is the thing connected to that variable that is going to modify this variable, a bit like the "you" of the present and the "you" of the future after you changed, that is the setPopular.
 
+<br>
+
 ```javascript
 //4
 const [popular, setPopular] = useState([]);
 ```
+
+<br>
+
+#### and we will be adding for default this: useState([]);
+
+- The reason for that is because the data we are going to get from the **fetchPopular function** is an array
