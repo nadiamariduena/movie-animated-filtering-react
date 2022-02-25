@@ -90,7 +90,7 @@ const Home = () => {
   return (
     <Wrapper>
       {" "}
-      <Filter />
+      <Filter popular={popular} setFiltered={setFiltered} />
       <AddContent>
         <PopularMovies>
           {popular.map((movie) => (

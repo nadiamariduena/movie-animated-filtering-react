@@ -205,6 +205,26 @@ setFiltered(movies.results); ✋
 
 ##### Now let's check if we can see the second state on the console
 
-- As you can see, we have 2 states containing the same data ✋
+- As you can see in the gif, we have 2 states containing the same data ✋
 
 [<img src="./src/img/2state.gif"/>]()
+
+<br>
+<br>
+
+- the 1 is the original state
+
+- the 2 one is the **filter** state
+
+[<img src="./src/img/2states.jpg"/>]()
+
+<br>
+<br>
+
+### Add the following to the Filter component
+
+-
+
+```javascript
+<Filter popular={popular} setFiltered={setFiltered} />
+```
