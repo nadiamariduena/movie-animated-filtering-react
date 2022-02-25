@@ -475,7 +475,7 @@ export default Movie;
 
 <br>
 
-## Good 🌈
+## Good 🐖
 
 > But since we are using an **API** , we have to **prepend** the url of the image, like so:
 
@@ -500,3 +500,68 @@ src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`}
 <br><br>
 
 [<img src="./src/img/preview-map.gif"/>]()
+
+<br><br>
+
+---
+
+<br><br>
+
+## Styles 🌈
+
+- In this section you will add a grid, **but before that** create a new div to nest the mapping of the **movie**
+
+```javascript
+return (
+  <Wrapper>
+    <AddContent>
+      ✋
+      <PopularMovies>
+        {popular.map((movie) => (
+          <>
+            <Movie key={movie.id} movie={movie} />
+          </>
+        ))}
+      </PopularMovies>
+      ✋
+    </AddContent>
+  </Wrapper>
+);
+```
+
+<br>
+
+##### style the **PopularMovies** div
+
+```javascript
+// -- GRID --
+const PopularMovies = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 1rem;
+  grid-row-gap: 2rem;
+
+  // the img that is inside the CARD Movie component
+  img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+  }
+`;
+```
+
+<br>
+
+##### ⚠️ the grid will not work like it shoudl if the parent div contain a display: flex
+
+```javascript
+const Wrapper = styled.div`
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0 0 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
+`;
+```

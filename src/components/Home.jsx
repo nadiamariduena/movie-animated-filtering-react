@@ -14,19 +14,35 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background: red;
 `;
-const Container = styled.div``;
 
 //
 //
 const AddContent = styled.div`
-  width: 100%;
+  /* width: 100%;
   height: 100%;
   min-height: 4vh;
-  padding: 0px 0 20px 0;
+  padding: 0px 0 20px 0; */
   text-align: center;
+  background: #b3b383;
 `;
 
+//
+// -- GRID --
+const PopularMovies = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 1rem;
+  grid-row-gap: 2rem;
+
+  /*  */
+  img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+  }
+`;
 //
 //
 const Home = () => {
@@ -58,16 +74,18 @@ const Home = () => {
 
   return (
     <Wrapper>
-      <Container>
-        <AddContent>
-          <h1>home</h1>
+      <AddContent>
+        <h1>home</h1>
+
+        <PopularMovies>
+          {" "}
           {popular.map((movie) => (
             <>
               <Movie key={movie.id} movie={movie} />
             </>
           ))}
-        </AddContent>{" "}
-      </Container>
+        </PopularMovies>
+      </AddContent>{" "}
     </Wrapper>
   );
 };
