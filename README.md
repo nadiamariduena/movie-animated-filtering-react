@@ -412,9 +412,15 @@ return (
 <br>
 <br>
 
-#### Now pass the prop so that we can use it inside the card of the movie
+#### Now pass the prop, so that we can use it inside the card of the movie.
 
 - **this is the prop:** movie={movie}
+
+<br>
+
+- this **key={movie.id}** is important because react ask that everything that is mapped should contain a unique key, otherwise you will have an error in the console
+
+<br>
 
 ```javascript
 return (
