@@ -89,3 +89,5 @@ import { Filter } from "./Filter";
     <Wrapper>
       <Filter /> ✋
 ```
+
+[<img src="./src/img/preview-3-buttons_filter.gif"/>]()
