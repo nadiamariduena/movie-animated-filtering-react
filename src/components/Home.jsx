@@ -48,6 +48,8 @@ const Home = () => {
     );
     //
     const movies = await data.json();
+    console.log(movies);
+    setPopular(movies.results);
   };
 
   //
