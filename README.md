@@ -199,6 +199,12 @@ setPopular(movies.results);
 setFiltered(movies.results); ✋
 ```
 
-##### No lets see if we can see the second state on the console
+<br>
 
-[<img src="./src/img/preview-3-buttons_filter.gif"/>]()
+## 👁️
+
+##### Now let's check if we can see the second state on the console
+
+- As you can see, we have 2 states containing the same data ✋
+
+[<img src="./src/img/2state.gif"/>]()
