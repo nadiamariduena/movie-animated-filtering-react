@@ -209,6 +209,29 @@ import React, { useEffect, useState } from "react";
 
 <br>
 
-#### why create a function with async await inside a useEffect , read it in the link below:
+#### why create a function with async await inside a useEffect.
+
+- Read it in the link below about wjat not to do:
 
 ##### [React Hooks: async function in the useEffect ](https://dev.to/danialdezfouli/what-s-wrong-with-the-async-function-in-useeffect-4jne)
+
+```javascript
+const Home = () => {
+  //
+  //3 call the function from step 1
+  useEffect(() => {
+    fetchPopular();
+  }, []);
+
+  //
+  //1
+  const fetchPopular = async () => {
+    //
+    const data = await fetch(
+      `https://api.themoviedb.org/3/movie/popular?api_key=${REACT_APP_TMDB_KEY}&language=en-US&page=1&include_adult=false`
+    );
+    //2
+    const movies = await data.json();
+  };
+  return (
+```

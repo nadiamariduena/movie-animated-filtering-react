@@ -31,6 +31,15 @@ const AddContent = styled.div`
 const Home = () => {
   //
   //
+
+  //
+  //2
+  useEffect(() => {
+    fetchPopular();
+  }, []);
+
+  //
+  //1
   const fetchPopular = async () => {
     //
     const data = await fetch(
