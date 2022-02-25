@@ -215,6 +215,17 @@ import React, { useEffect, useState } from "react";
 
 ##### [React Hooks: async function in the useEffect ](https://dev.to/danialdezfouli/what-s-wrong-with-the-async-function-in-useeffect-4jne)
 
+<br>
+
+<br>
+
+## UseEffect
+
+- Call the **fetchPopular** function
+
+<br>
+<br>
+
 ```javascript
 const Home = () => {
   //
