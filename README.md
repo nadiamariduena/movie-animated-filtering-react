@@ -199,4 +199,12 @@ import React, { useEffect, useState } from "react";
 
 <br>
 
-##### Things he didnt explain the tutorial, like why isnt a good idea adding async directly in the useEffect?
+# ⚠️
+
+#### Things he didnt explain in the tutorial:
+
+- why isnt a good idea adding async directly in the useEffect? Of course he didnt do it but he directly add the function inside the useEffect without explaining why, as you can see it in the video.
+
+##### 7:31 [Awesome Filtering Animation with React Tutorial](https://youtu.be/nyg5Lpl6AiM)
+
+#### why create a function with async
