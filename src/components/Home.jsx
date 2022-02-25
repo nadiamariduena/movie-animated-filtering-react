@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { mobile, mobileM, tablet } from "../responsive";
+import Movie from "./Movie";
 
 // API
 const { REACT_APP_TMDB_KEY } = process.env;
@@ -61,7 +62,9 @@ const Home = () => {
         <AddContent>
           <h1>home</h1>
           {popular.map((movie) => (
-            <h1>movies</h1>
+            <>
+              <Movie />
+            </>
           ))}
         </AddContent>{" "}
       </Container>

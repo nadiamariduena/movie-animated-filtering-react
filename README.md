@@ -334,7 +334,13 @@ setPopular(movies.results);
 <br>
 <br>
 
+## 🍨
+
 ## mapping the data 'movies'
+
+- We will be mapping the movies in the same component, but we will create another component for the movie **card**
+
+<br>
 
 ```javascript
 
@@ -351,4 +357,54 @@ setPopular(movies.results);
     </Wrapper>
   );
 };
+```
+
+<br>
+<br>
+
+#### Create a Movie card component
+
+- INside the **components** folder, Add the following:
+
+```javascript
+import React from "react";
+
+const Movie = () => {
+  return (
+    <div>
+      <h2>Title</h2>
+      <img src="" alt="" />
+    </div>
+  );
+};
+
+export default Movie;
+```
+
+<br>
+<br>
+
+#### Now go back to the Home.jsx
+
+- import the card component
+
+> import Movie from "./Movie";
+
+#### and use it here:
+
+```javascript
+return (
+  <Wrapper>
+    <Container>
+      <AddContent>
+        <h1>home</h1>
+        {popular.map((movie) => (
+          <>
+            <Movie /> ✋
+          </>
+        ))}
+      </AddContent>{" "}
+    </Container>
+  </Wrapper>
+);
 ```
