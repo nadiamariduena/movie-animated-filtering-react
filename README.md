@@ -254,6 +254,8 @@ const Home = () => {
 
 - We will be storing the data in the state below:
 
+> **popular** is like a **variable** and **setPopular** is the thing connected to that variable that is going to modify this variable, a bit like the "you" of the present and the "you" of the future after you changed, that is the setPopular.
+
 ```javascript
 //4
 const [popular, setPopular] = useState([]);
