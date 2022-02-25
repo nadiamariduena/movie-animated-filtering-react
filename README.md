@@ -312,7 +312,7 @@ total_results: 649888
 <br>
 <br>
 
-### With <u>setPopular(movies.results)</u> You will be able to see specifically the 'results'
+#### With <u>setPopular(movies.results)</u> You will be able to see the 'results'
 
 ```javascript
 const movies = await data.json();
@@ -324,4 +324,31 @@ setPopular(movies.results);
 
 ```javascript
 {page: 1, results: Array(20), total_pages: 32495, total_results: 649888}page: 1results: Array(20)0: {adult: false, backdrop_path: '/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg', genre_ids: Array(3), id: 634649, original_language: 'en', …}1: {adult: false, backdrop_path: '/4OTYefcAlaShn6TGVK33UxLW9R7.jpg', genre_ids: Array(4), id: 476669, original_language: 'en', …}2: {adult: false, backdrop_path: '/usaZV7KB6Man9Rm9TyDAeQf7uVD.jpg', genre_ids: Array(3), id: 646385, original_language: 'en', …}3: {adult: false, backdrop_path: '/3G1Q5xF40HkUBJXxt2DQgQzKTp5.jpg', genre_ids: Array(4), id: 568124, original_language: 'en', …}4: {adult: false, backdrop_path: '/mqDnDhG5N6fn1H4MKQqr8E5wfeK.jpg', genre_ids: Array(3), id: 597208, original_language: 'en', …}5: {adult: false, backdrop_path: '/mruT954ve6P1zquaRs6XG0hA5k9.jpg', genre_ids: Array(1), id: 800510, original_language: 'en', …}6: {adult: false, backdrop_path: '/cugmVwK0N4aAcLibelKN5jWDXSx.jpg', genre_ids: Array(4), id: 768744, original_language: 'ja', …}7: {adult: false, backdrop_path: '/qlPbDersJDdeBORrENQjoz9JfwJ.jpg', genre_ids: Array(5), id: 783461, original_language: 'hi', …}8: {adult: false, backdrop_path: '/eG0oOQVsniPAuecPzDD1B1gnYWy.jpg', genre_ids: Array(4), id: 774825, original_language: 'en', …}9: {adult: false, backdrop_path: '/c6H7Z4u73ir3cIoCteuhJh7UCAR.jpg', genre_ids: Array(4), id: 524434, original_language: 'en', …}10: {adult: false, backdrop_path: '/eVSa4TpyXbOdk9fXSD6OcORJGtv.jpg', genre_ids: Array(1), id: 803114, original_language: 'en', …}11: {adult: false, backdrop_path: '/dK12GIdhGP6NPGFssK2Fh265jyr.jpg', genre_ids: Array(4), id: 512195, original_language: 'en', …}12: {adult: false, backdrop_path: '/qBLEWvJNVsehJkEJqIigPsWyBse.jpg', genre_ids: Array(5), id: 585083, original_language: 'en', …}13: {adult: false, backdrop_path: '/tutaKitJJIaqZPyMz7rxrhb4Yxm.jpg', genre_ids: Array(4), id: 438695, original_language: 'en', …}14: {adult: false, backdrop_path: '/koaxq5QbARIlfxCOR89atPHv367.jpg', genre_ids: Array(3), id: 615904, original_language: 'en', …}15: {adult: false, backdrop_path: '/t4To8feUSysyBs4tlBAbXIrKlCv.jpg', genre_ids: Array(2), id: 860623, original_language: 'en', …}16: {adult: false, backdrop_path: '/cTTggc927lEPCMsWUsdugSj6wAY.jpg', genre_ids: Array(2), id: 335787, original_language: 'en', …}17: {adult: false, backdrop_path: '/EnDlndEvw6Ptpp8HIwmRcSSNKQ.jpg', genre_ids: Array(3), id: 425909, original_language: 'en', …}18: {adult: false, backdrop_path: '/vIgyYkXkg6NC2whRbYjBD7eb3Er.jpg', genre_ids: Array(3), id: 580489, original_language: 'en', …}19: {adult: false, backdrop_path: '/o76ZDm8PS9791XiuieNB93UZcRV.jpg', genre_ids: Array(3), id: 460458, original_language: 'en', …}length: 20[[Prototype]]: Array(0)total_pages: 32495total_results: 649888[[Prototype]]: Object
+```
+
+<br>
+<br>
+
+---
+
+<br>
+<br>
+
+## mapping the data 'movies'
+
+```javascript
+
+  return (
+    <Wrapper>
+      <Container>
+        <AddContent>
+          <h1>home</h1>
+          {popular.map((movie) => (
+            <h1>movies</h1>
+          ))}
+        </AddContent>{" "}
+      </Container>
+    </Wrapper>
+  );
+};
 ```

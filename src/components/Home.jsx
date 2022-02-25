@@ -60,6 +60,9 @@ const Home = () => {
       <Container>
         <AddContent>
           <h1>home</h1>
+          {popular.map((movie) => (
+            <h1>movies</h1>
+          ))}
         </AddContent>{" "}
       </Container>
     </Wrapper>
