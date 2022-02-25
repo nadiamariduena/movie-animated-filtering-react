@@ -408,3 +408,27 @@ return (
   </Wrapper>
 );
 ```
+
+<br>
+<br>
+
+#### Now pass the prop so that we can use it inside the card of the movie
+
+- **this is the prop:** movie={movie}
+
+```javascript
+return (
+  <Wrapper>
+    <Container>
+      <AddContent>
+        <h1>home</h1>
+        {popular.map((movie) => (
+          <>
+            <Movie key={movie.id} movie={movie} /> ✋
+          </>
+        ))}
+      </AddContent>{" "}
+    </Container>
+  </Wrapper>
+);
+```

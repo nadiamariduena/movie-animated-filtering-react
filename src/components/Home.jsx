@@ -63,7 +63,7 @@ const Home = () => {
           <h1>home</h1>
           {popular.map((movie) => (
             <>
-              <Movie />
+              <Movie key={movie.id} movie={movie} />
             </>
           ))}
         </AddContent>{" "}
