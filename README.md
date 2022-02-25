@@ -207,4 +207,8 @@ import React, { useEffect, useState } from "react";
 
 ##### 7:31 [Awesome Filtering Animation with React Tutorial](https://youtu.be/nyg5Lpl6AiM)
 
-#### why create a function with async
+<br>
+
+#### why create a function with async await inside a useEffect , read it in the link below:
+
+##### [React Hooks: async function in the useEffect ](https://dev.to/danialdezfouli/what-s-wrong-with-the-async-function-in-useeffect-4jne)
