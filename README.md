@@ -467,10 +467,19 @@ export default Movie;
 
 #### Here for example, we cannot do this
 
-- In normal times when you want to show an image coming from json, you just have to do this **movie.img** , and that will be all, but since we are using an **API** , we have to **prepend** the url of the image
+- In normal times when you want to show an image coming from json, you just have to do this: <u>**movie.img**</u>, and that will be all:
 
 ```javascript
 <img src={movie.poster_path} alt={movie.title} />
+```
+
+<br>
+
+> But since we are using an **API** , we have to **prepend** the url of the image, like so:
+
+```javascript
+src={"https://image.tmdb.org/t/p/w200" + movie.backdrop_path}
+                alt={`${movie.title} Poster`}
 ```
 
 <br>
@@ -483,3 +492,7 @@ export default Movie;
 src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`}
                 alt={`${movie.title} Poster`}
 ```
+
+<br><br>
+
+[<img src="./src/img/preview-map.gif"/>]()
