@@ -186,3 +186,15 @@ const [filtered, setFiltered] = useState([]);
 ##### The reason why we are duplicating the <u>popular</u> state, is because if we mess out with the "popular" when updating, there is no way to go back to the original state, unless we do another FETCH request, which we dont want to do, as we dont want to do MULTIPLE fetch requests if you already have the same DATA stored.
 
 ### 👾👾👾
+
+<br>
+
+#### use the new state here:
+
+```javascript
+const movies = await data.json();
+console.log(movies);
+setPopular(movies.results);
+//
+setFiltered(movies.results); ✋
+```
