@@ -246,3 +246,15 @@ const Home = () => {
   };
   return (
 ```
+
+<br>
+<br>
+
+#### Now store that data somewhere
+
+- We will be storing the data in the state below:
+
+```javascript
+//4
+const [popular, setPopular] = useState([]);
+```

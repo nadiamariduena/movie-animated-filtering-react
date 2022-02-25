@@ -30,7 +30,8 @@ const AddContent = styled.div`
 //
 const Home = () => {
   //
-  //
+  //4
+  const [popular, setPopular] = useState([]);
 
   //
   //2
