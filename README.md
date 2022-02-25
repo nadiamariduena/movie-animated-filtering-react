@@ -475,6 +475,8 @@ export default Movie;
 
 <br>
 
+## Good 🌈
+
 > But since we are using an **API** , we have to **prepend** the url of the image, like so:
 
 ```javascript
@@ -483,6 +485,8 @@ src={"https://image.tmdb.org/t/p/w200" + movie.backdrop_path}
 ```
 
 <br>
+
+#### Also Good 🐖
 
 ##### comparing to the other [ project](https://github.com/nadiamariduena/movie-watchlist-reacthooks-context-api) i made before this:
 
