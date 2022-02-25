@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { mobile, mobileM, tablet } from "../responsive";
+import { Filter } from "./Filter";
 import MovieCard from "./MovieCard";
 
 // API
@@ -10,9 +11,9 @@ const { REACT_APP_TMDB_KEY } = process.env;
 const Wrapper = styled.div`
   width: 100vw;
   min-height: 100vh;
-  padding: 0 0 100px 0;
+  padding: 0 0 20px 0;
   text-align: center;
-  background: #fceba0;
+
   h1 {
     padding: 10px 0;
     font-size: calc(25px + 1.8vmin);
@@ -24,12 +25,8 @@ const Wrapper = styled.div`
 //
 //
 const AddContent = styled.div`
-  /* width: 100%;
-  height: 100%;
-  min-height: 4vh;
-  padding: 0px 0 20px 0; */
-  text-align: center;
-  background: #f1c6a94b;
+  padding: 0px 0 20px 0;
+  background: #0f0f0f;
 `;
 
 //
@@ -52,8 +49,10 @@ const PopularMovies = styled.div`
 
   h2 {
     padding: 10px 0;
-    font-size: calc(7px + 1vmin);
-    font-weight: 500;
+    font-size: calc(6px + 1vmin);
+    font-weight: 600;
+    color: #f7f4e79a;
+    font-family: "PoppinsThin";
   }
 `;
 //
@@ -88,7 +87,7 @@ const Home = () => {
   return (
     <Wrapper>
       {" "}
-      <h1>home</h1>
+      <Filter />
       <AddContent>
         <PopularMovies>
           {" "}

@@ -3,21 +3,34 @@ import styled from "styled-components";
 
 //
 //
-const FilterContainer = styled.div``;
+const FilterContainer = styled.div`
+  margin-top: 40px;
+  padding: 20px 0;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 const Button = styled.button`
+  margin: 0 3px;
   padding: 12px 28px;
-  border: 0;
-  background: #000;
-  color: #fff;
+  border-radius: 2rem;
+  border: 2px solid #000;
+  background: transparent;
+  color: #000;
+  &:hover {
+    background: #000;
+    color: #ffffff;
+  }
 `;
 //
 
 export const Filter = () => {
   return (
     <FilterContainer>
-      <Button>a</Button>
-      <Button>b</Button>
-      <Button>c</Button>
+      <Button>All</Button>
+      <Button>Comedy</Button>
+      <Button>Action</Button>
     </FilterContainer>
   );
 };

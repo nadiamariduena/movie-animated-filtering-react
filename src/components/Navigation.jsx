@@ -6,26 +6,31 @@ const Header = styled.header`
   width: 100vw;
   min-height: 3vh;
   padding: 1vh 0;
-  background: #1ba1aa;
+
+  border-bottom: 1px solid #000;
 `;
 const Nav = styled.nav`
   width: 100%;
   height: 100%;
 
-  background: #b7dad5;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  font-size: calc(5px + 1.8vmin);
+  font-size: calc(8px + 1.8vmin);
   text-transform: uppercase;
   font-weight: 600;
+  h3 {
+    letter-spacing: 9px;
+  }
 `;
 
 export const Navigation = () => {
   return (
     <Header>
-      <Nav>hello</Nav>
+      <Nav>
+        <h3>LOGO</h3>
+      </Nav>
     </Header>
   );
 };
