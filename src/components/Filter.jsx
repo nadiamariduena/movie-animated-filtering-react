@@ -18,7 +18,15 @@ const Button = styled.button`
   border: 2px solid #000;
   background: transparent;
   color: #000;
+
+  cursor: pointer;
+  /*  */
   &:hover {
+    background: #f7f4e79a;
+
+    color: #0e0e0e;
+  }
+  &:active {
     background: #000;
     color: #ffffff;
   }
