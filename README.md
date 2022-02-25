@@ -184,3 +184,19 @@ const fetchPopular = async () => {
 <br>
 
 #### Now we need to store this data somewhere and make that the function above with the fetched DATA "runs", as for now its not doing anything.
+
+<br>
+
+#### We will start by importing <u>useEffect and useState</u>
+
+```javascript
+import React, { useEffect, useState } from "react";
+```
+
+<br>
+
+- the **useEffect** here is used when the component renders,
+
+<br>
+
+##### Things he didnt explain the tutorial, like why isnt a good idea adding async directly in the useEffect?
