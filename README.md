@@ -178,3 +178,11 @@ const [filtered, setFiltered] = useState([]);
 #### Recapitulation:
 
 > So this new **variable/state** called **filtered** is going to copy all from the state variable **popular** but will filter out **the elements or the movies** based in what we are clicking on
+
+<br>
+
+### 👾👾👾
+
+##### The reason why we are duplicating the <u>popular</u> state, is because if we mess out with the "popular" when updating, there is no way to go back to the original state, unless we do another FETCH request, which we dont want to do, as we dont want to do MULTIPLE fetch requests if you already have the same DATA stored.
+
+### 👾👾👾
