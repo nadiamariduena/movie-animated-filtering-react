@@ -61,6 +61,8 @@ const Home = () => {
   //
   //4
   const [popular, setPopular] = useState([]);
+  //
+  const [filtered, setFiltered] = useState([]);
 
   //
   //2
@@ -79,6 +81,8 @@ const Home = () => {
     const movies = await data.json();
     console.log(movies);
     setPopular(movies.results);
+    //
+    setFiltered(movies.results);
   };
 
   //

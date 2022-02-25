@@ -98,3 +98,52 @@ import { Filter } from "./Filter";
 ```
 
 [<img src="./src/img/preview-3-buttons_filter.gif"/>]()
+
+<br>
+<br>
+
+## Key error 🔴
+
+<br>
+
+```javascript
+index.js:1 Warning: Each child in a list should have a unique "key" prop.
+
+Check the render method of `Home`. See https://reactjs.org/link/warning-keys for more information.
+```
+
+<br>
+
+> Even if I know that the solution is adding this: **key={movie.id}** sometimes it just dont work, and the reason for that is as you can see in the 2 examples below:
+
+<br>
+<br>
+
+### solution 🌈
+
+- Remove the fragments **<></>**
+
+```javascript
+
+//
+//      BEFORE
+<PopularMovies>
+   {popular.map((movie) => (
+            <>
+              <MovieCard key={movie.id} movie={movie} />
+            </>
+          ))}
+</PopularMovies>
+//
+//
+//
+//
+//      AFTER
+<PopularMovies>
+  {popular.map((movie) => (
+    <div key={movie.id}>
+      <MovieCard movie={movie} />
+    </div>
+  ))}
+</PopularMovies>
+```
