@@ -32,7 +32,12 @@ const Button = styled.button`
 `;
 //
 
-export const Filter = () => {
+export const Filter = ({
+  setFiltered,
+  activeGenre,
+  setActiveGenre,
+  popular,
+}) => {
   return (
     <FilterContainer>
       <Button>All</Button>

@@ -347,10 +347,50 @@ const [activeGenre, setActiveGenre] = useState(0);
 
 <br>
 
-### Add the following to the Filter component
+##### SO the 0 we added, we are going to configure it ourselves later one
 
--
+<br>
+
+---
+
+<br>
+
+### Add the states to the Filter component
+
+<br>
+
+- **Home.jsx**
 
 ```javascript
-<Filter popular={popular} setFiltered={setFiltered} />
+return (
+    <Wrapper>
+
+      <Filter
+         popular={popular}
+        setFiltered={setFiltered}
+        activeGenre={activeGenre}
+        setActiveGenre={setActiveGenre}
+      />
+```
+
+<br>
+<br>
+
+### Now lets access the props above inside the Filter.jsx
+
+```javascript
+export const Filter = ({
+  setFiltered,
+  activeGenre,
+  setActiveGenre,
+  popular,
+}) => {
+  return (
+    <FilterContainer>
+      <Button>All</Button>
+      <Button>Comedy</Button>
+      <Button>Action</Button>
+    </FilterContainer>
+  );
+};
 ```
