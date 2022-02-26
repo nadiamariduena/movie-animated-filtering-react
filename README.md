@@ -428,3 +428,14 @@ export const Filter = ({
 ### In my app
 
 [<img src="./src/img/genre-filtering2.gif"/>]()
+
+<br>
+<br>
+
+### useEffect
+
+```javascript
+import React, { useEffect } from "react";
+```
+
+> The useEffect here is going to **run** every time we make changes, by changes I mean, **Every time i click these buttons**

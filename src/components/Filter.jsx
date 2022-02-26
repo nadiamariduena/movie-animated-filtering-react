@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 
 //
@@ -12,7 +12,7 @@ const FilterContainer = styled.div`
 `;
 const Button = styled.button`
   margin: 0 3px;
-  padding: 12px 28px;
+  padding: 12px 20px;
   border-radius: 2rem;
   border: 2px solid #000;
   background: transparent;
@@ -41,7 +41,7 @@ export const Filter = ({
   return (
     <FilterContainer>
       <Button onClick={() => setActiveGenre(0)}> All</Button>
-      <Button onClick={() => setActiveGenre(35)}>Comedy</Button>
+      <Button onClick={() => setActiveGenre(878)}>Science Fiction</Button>
       <Button onClick={() => setActiveGenre(28)}>Action</Button>
     </FilterContainer>
   );
