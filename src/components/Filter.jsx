@@ -38,6 +38,13 @@ export const Filter = ({
   setActiveGenre,
   popular,
 }) => {
+  //
+  //
+
+  useEffect(() => {}, [activeGenre]);
+
+  //
+  //
   return (
     <FilterContainer>
       <Button onClick={() => setActiveGenre(0)}> All</Button>

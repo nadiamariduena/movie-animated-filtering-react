@@ -432,10 +432,33 @@ export const Filter = ({
 <br>
 <br>
 
-### useEffect
+## useEffect
 
 ```javascript
 import React, { useEffect } from "react";
 ```
 
+<br>
+
 > The useEffect here is going to **run** every time we make changes, by changes I mean, **Every time i click these buttons**
+
+<br>
+
+- add this dependeny to the useEffect: **[activeGenre]**
+
+<br>
+
+```javascript
+useEffect(() => {
+  /*
+
+Here we are going to modify the 2 state you see in the
+developers tool "components"
+
+*/
+}, [activeGenre]); ✋
+```
+
+<br>
+
+[<img src="./src/img/2states_useeffect.jpg"/>]()
