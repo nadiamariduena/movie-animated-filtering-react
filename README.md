@@ -421,3 +421,10 @@ export const Filter = ({
 <br>
 
 [<img src="./src/img/genre-filtering1.gif"/>]()
+
+<br>
+<br>
+
+### In my app
+
+[<img src="./src/img/genre-filtering2.gif"/>]()
