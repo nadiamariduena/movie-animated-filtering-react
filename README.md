@@ -195,3 +195,9 @@ export default MovieCard;
   />
 </motion.div>
 ```
+
+<br>
+
+- Here you can notice the **fade in** in the beginning
+
+[<img src="./src/img/framer-ugly-3.gif"/>]()
