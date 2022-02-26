@@ -484,12 +484,17 @@ if (activeGenre === 0) {
 <br>
 <br>
 
+#### Here we will filter the "popular" array with the filter(), then we will define the "movie" as the popular and with it, we will get the \_ids and ask it to only get anything that includes the activeGenre.
+
 ```javascript
-// here we will filter the popular array with the filter(), then once filtered, we will grab the _ids from the array and tell it to get only the ones that includes() all the movies that match with the numbers we have inside the buttons.
 const filtered = popular.filter((movie) =>
   movie.genre_ids.includes(activeGenre)
 );
 ```
+
+<br>
+
+[<img src="./src/img/filtered.gif"/>]()
 
 <br>
 <br>
