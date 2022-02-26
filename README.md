@@ -174,3 +174,24 @@ export default MovieCard;
 [<img src="./src/img/fframer-ugly-2.gif"/>]()
 
 <br>
+
+##### Lets make it smooth
+
+- add a fade in and fade out, so that it don't disappear abruptly
+
+- Go to the **MovieCard.jsx**
+
+```javascript
+<motion.div
+  animate={{ opacity: 1 }}
+  initial={{ opacity: 0 }}
+  exit={{ opacity: 0 }}
+  layout
+>
+  <h2>{movie.title}</h2>
+  <img
+    src={"https://image.tmdb.org/t/p/w500" + movie.backdrop_path}
+    alt={movie.title}
+  />
+</motion.div>
+```
