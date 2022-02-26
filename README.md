@@ -364,3 +364,9 @@ const MovieCard = ({ movie }) => {
 
 export default MovieCard;
 ```
+
+<br>
+
+#### As you can see, I added a transition, its not so coold for performance but its okay for this project.
+
+[<img src="./src/img/animatedprescense.gif"/>]()
