@@ -62,7 +62,8 @@ const Home = () => {
   const [popular, setPopular] = useState([]);
   //
   const [filtered, setFiltered] = useState([]);
-
+  //
+  const [activeGenre, setActiveGenre] = useState(0);
   //
   //2
   useEffect(() => {

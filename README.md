@@ -221,6 +221,120 @@ setFiltered(movies.results); ✋
 <br>
 <br>
 
+#### Before continuing. lets add another state, this state will take care of the genre, so to know which button is active
+
+```javascript
+const [activeGenre, setActiveGenre] = useState(0);
+```
+
+- to know why we get into the **0**, you have to go to the component in the console.
+
+#### By default the state is going to be 0, but why 0?
+
+- As you can see in the gif, when we open the object containing one movie, we will notice that the genre contains number, but why the numbers dont start from 0?
+
+<br>
+
+> its because this **API** was made like that, they added their genres in such way
+
+[<img src="./src/img/3state.gif"/>]()
+
+<br>
+
+- To understand it better you have to go to the api [genres/get-movie-list](https://developers.themoviedb.org/3/genres/get-movie-list) and see it yourself, by adding your api key like in the gif below
+
+<br>
+
+[<img src="./src/img/api-genres.gif"/>]()
+
+<br>
+
+```javascript
+{
+  "genres": [
+    {
+      "id": 28,
+      "name": "Action"
+    },
+    {
+      "id": 12,
+      "name": "Adventure"
+    },
+    {
+      "id": 16,
+      "name": "Animation"
+    },
+    {
+      "id": 35,
+      "name": "Comedy"
+    },
+    {
+      "id": 80,
+      "name": "Crime"
+    },
+    {
+      "id": 99,
+      "name": "Documentary"
+    },
+    {
+      "id": 18,
+      "name": "Drama"
+    },
+    {
+      "id": 10751,
+      "name": "Family"
+    },
+    {
+      "id": 14,
+      "name": "Fantasy"
+    },
+    {
+      "id": 36,
+      "name": "History"
+    },
+    {
+      "id": 27,
+      "name": "Horror"
+    },
+    {
+      "id": 10402,
+      "name": "Music"
+    },
+    {
+      "id": 9648,
+      "name": "Mystery"
+    },
+    {
+      "id": 10749,
+      "name": "Romance"
+    },
+    {
+      "id": 878,
+      "name": "Science Fiction"
+    },
+    {
+      "id": 10770,
+      "name": "TV Movie"
+    },
+    {
+      "id": 53,
+      "name": "Thriller"
+    },
+    {
+      "id": 10752,
+      "name": "War"
+    },
+    {
+      "id": 37,
+      "name": "Western"
+    }
+  ]
+}
+
+```
+
+<br>
+
 ### Add the following to the Filter component
 
 -
