@@ -21,7 +21,7 @@ const Button = styled.button`
   cursor: pointer;
   /*  */
   &:hover {
-    background: #f7f4e79a;
+    background: #fcfcfc9a;
 
     color: #0e0e0e;
   }
@@ -65,9 +65,25 @@ export const Filter = ({
   //
   return (
     <FilterContainer>
-      <Button onClick={() => setActiveGenre(0)}> All</Button>
-      <Button onClick={() => setActiveGenre(878)}>Science Fiction</Button>
-      <Button onClick={() => setActiveGenre(28)}>Action</Button>
+      <Button
+        className={activeGenre === 0 ? "active" : ""}
+        onClick={() => setActiveGenre(0)}
+      >
+        {" "}
+        All
+      </Button>
+      <Button
+        className={activeGenre === 878 ? "active" : ""}
+        onClick={() => setActiveGenre(878)}
+      >
+        Science Fiction
+      </Button>
+      <Button
+        className={activeGenre === 28 ? "active" : ""}
+        onClick={() => setActiveGenre(28)}
+      >
+        Action
+      </Button>
     </FilterContainer>
   );
 };

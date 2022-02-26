@@ -614,6 +614,59 @@ useEffect(() => {
 <br>
 <br>
 
----
+# 🥭
+
+### Add an "active" class depending in what we click
 
 <br>
+
+- If activeGenre is equal to 0 then add active, otherwise add **nothing ""**
+
+```javascript
+className={activeGenre === 0 ? "active" : ""}
+```
+
+<br>
+
+#### Now duplicate it an add it to the 2 other buttons, like so:
+
+```javascript
+<Button className={activeGenre === 878 ? "active" : ""} onClick={() => setActiveGenre(878)}>Science Fiction</Button>
+
+    //
+<Button className={activeGenre === 28 ? "active" : ""} onClick={() => setActiveGenre(28)}>Action</Button>
+```
+
+<br>
+
+##### ⚠️ If you have styles on the button, it might clash with the "active" class
+
+<br>
+
+#### So this is what we have:
+
+```javascript
+return (
+  <FilterContainer>
+    <Button
+      className={activeGenre === 0 ? "active" : ""}
+      onClick={() => setActiveGenre(0)}
+    >
+      {" "}
+      All
+    </Button>
+    <Button
+      className={activeGenre === 878 ? "active" : ""}
+      onClick={() => setActiveGenre(878)}
+    >
+      Science Fiction
+    </Button>
+    <Button
+      className={activeGenre === 28 ? "active" : ""}
+      onClick={() => setActiveGenre(28)}
+    >
+      Action
+    </Button>
+  </FilterContainer>
+);
+```
