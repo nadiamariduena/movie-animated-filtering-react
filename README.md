@@ -100,3 +100,30 @@ const PopularMovies = styled.div`
   }
 
 ```
+
+<br>
+
+#### The reason for this, is because it seems like framer-Motion doesnt work with styled components.
+
+- If you try it you can see that the grid will behave differently
+
+<br>
+<br>
+
+### 🌈
+
+#### the animation settings
+
+- add the **layout**, first to the parent and then to the child, as you will notice that if you only add it to the parent, **it will cause an ugly image stretching**.
+
+<br>
+
+```javascript
+<motion.div layout className="wrapper-cards">
+  {filtered.map((movie) => (
+    <div key={movie.id}>
+      <MovieCard movie={movie} />
+    </div>
+  ))}
+</motion.div>
+```

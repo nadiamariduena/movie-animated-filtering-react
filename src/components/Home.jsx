@@ -102,7 +102,7 @@ const Home = () => {
       />
       <AddContent>
         <PopularMovies>
-          <motion.div className="wrapper-cards">
+          <motion.div layout className="wrapper-cards">
             {filtered.map((movie) => (
               <div key={movie.id}>
                 <MovieCard movie={movie} />
@@ -110,7 +110,7 @@ const Home = () => {
             ))}
           </motion.div>
         </PopularMovies>
-      </AddContent>{" "}
+      </AddContent>
     </Wrapper>
   );
 };
