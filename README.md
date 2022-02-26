@@ -464,8 +464,9 @@ developers tool "components"
 [<img src="./src/img/2states_useeffect.jpg"/>]()
 
 <br>
+<br>
 
-#### Next step will be to add a conditional
+### Next step will be to add a conditional
 
 - In this conditional we will handle the genre identifiers, based on the list i added few steps above
 
@@ -478,4 +479,58 @@ if (activeGenre === 0) {
   setFiltered(popular);
   return; //when adding the return here, nothing else is going to run!
 }
+```
+
+<br>
+<br>
+
+```javascript
+// here we will filter the popular array with the filter(), then once filtered, we will grab the _ids from the array and tell it to get only the ones that includes() all the movies that match with the numbers we have inside the buttons.
+const filtered = popular.filter((movie) =>
+  movie.genre_ids.includes(activeGenre)
+);
+```
+
+<br>
+<br>
+
+#### like so:
+
+```javascript
+export const Filter = ({
+  setFiltered,
+  activeGenre,
+  setActiveGenre,
+  popular,
+}) => {
+  //
+  //
+
+  useEffect(() => {
+    //  if the user didnt type anything,
+    //  it will stay with the popular movies as default
+    if (activeGenre === 0) {
+      setFiltered(popular);
+      return;
+    }
+    // here we will filter the popular array with the filter(), then once filtered, we will grab the _ids from the array and tell it to get only the ones that includes() all the movies that match with the numbers we have inside the buttons here below
+    const filtered = popular.filter((movie) =>
+      movie.genre_ids.includes(activeGenre)
+    );
+    //
+    setFiltered(filtered);
+    //
+    //
+  }, [activeGenre]);
+
+  //
+  //
+  return (
+    <FilterContainer>
+      <Button onClick={() => setActiveGenre(0)}> All</Button>
+      <Button onClick={() => setActiveGenre(878)}>Science Fiction</Button>
+      <Button onClick={() => setActiveGenre(28)}>Action</Button>
+    </FilterContainer>
+  );
+};
 ```

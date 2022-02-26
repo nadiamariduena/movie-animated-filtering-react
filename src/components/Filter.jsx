@@ -42,10 +42,23 @@ export const Filter = ({
   //
 
   useEffect(() => {
+    //  if the user didnt type anything,
+    //  it will stay with the popular movies as default
     if (activeGenre === 0) {
       setFiltered(popular);
       return;
     }
+    // here we will filter the popular array with the filter(), then
+    // once filtered, we will grab the _ids from the array and tell it
+    // to get only the ones that includes() all the movies that match with
+    // the bumbers we have inside the buttons here below
+    const filtered = popular.filter((movie) =>
+      movie.genre_ids.includes(activeGenre)
+    );
+    //
+    setFiltered(filtered);
+    //
+    //
   }, [activeGenre]);
 
   //
