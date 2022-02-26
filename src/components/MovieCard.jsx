@@ -4,10 +4,11 @@ import { motion } from "framer-motion";
 const MovieCard = ({ movie }) => {
   return (
     <motion.div
+      layout
       animate={{ opacity: 1 }}
       initial={{ opacity: 0 }}
       exit={{ opacity: 0 }}
-      layout
+      transition={{ duration: 0.5 }}
     >
       <h2>{movie.title}</h2>
       <img

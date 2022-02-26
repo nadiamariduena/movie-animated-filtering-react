@@ -3,7 +3,7 @@ import styled from "styled-components";
 // import { mobile, mobileM, tablet } from "../responsive";
 import { Filter } from "./Filter";
 import MovieCard from "./MovieCard";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 // API
 const { REACT_APP_TMDB_KEY } = process.env;
@@ -103,11 +103,14 @@ const Home = () => {
       <AddContent>
         <PopularMovies>
           <motion.div layout className="wrapper-cards">
-            {filtered.map((movie) => (
-              <div key={movie.id}>
-                <MovieCard movie={movie} />
-              </div>
-            ))}
+            <AnimatePresence>
+              {" "}
+              {filtered.map((movie) => (
+                <div key={movie.id}>
+                  <MovieCard movie={movie} />
+                </div>
+              ))}
+            </AnimatePresence>
           </motion.div>
         </PopularMovies>
       </AddContent>
