@@ -221,31 +221,43 @@ setFiltered(movies.results); ✋
 <br>
 <br>
 
-#### Before continuing. lets add another state, this state will take care of the genre, so to know which button is active
+#### Before continuing lets add another state, this state will take care of the genre, so to know which button is active
 
 ```javascript
 const [activeGenre, setActiveGenre] = useState(0);
 ```
 
-- to know why we get into the **0**, you have to go to the component in the console.
-
-#### By default the state is going to be 0, but why 0?
-
-- As you can see in the gif, when we open the object containing one movie, we will notice that the genre contains number, but why the numbers dont start from 0?
-
 <br>
 
-> its because this **API** was made like that, they added their genres in such way
+#### 🐖
+
+- to know why we get into the **0**, you have to go to the component in the console.
+
+<br>
 
 [<img src="./src/img/3state.gif"/>]()
 
 <br>
 
-- To understand it better you have to go to the api [genres/get-movie-list](https://developers.themoviedb.org/3/genres/get-movie-list) and see it yourself, by adding your api key like in the gif below
+#### By default the state is going to be 0, but why 0?
+
+<br>
+
+- As you can see in the gif, when we open the object containing one single movie, we will notice that **the genre contains numbers**, but why the numbers don't start from 0?
+
+<br>
+
+> its because this **API** was made like that, they added their genres in such way
+
+<br>
+
+#### To understand it better, you have to go to the api [genres/get-movie-list](https://developers.themoviedb.org/3/genres/get-movie-list) , add your api key like in the gif below
 
 <br>
 
 [<img src="./src/img/api-genres.gif"/>]()
+
+- then copy the url and paste it inside the browser, then you will get this:
 
 <br>
 
