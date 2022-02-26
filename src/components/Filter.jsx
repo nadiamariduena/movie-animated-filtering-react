@@ -40,9 +40,9 @@ export const Filter = ({
 }) => {
   return (
     <FilterContainer>
-      <Button>All</Button>
-      <Button>Comedy</Button>
-      <Button>Action</Button>
+      <Button onClick={() => setActiveGenre(0)}> All</Button>
+      <Button onClick={() => setActiveGenre(35)}>Comedy</Button>
+      <Button onClick={() => setActiveGenre(28)}>Action</Button>
     </FilterContainer>
   );
 };

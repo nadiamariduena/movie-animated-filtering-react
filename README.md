@@ -261,6 +261,8 @@ const [activeGenre, setActiveGenre] = useState(0);
 
 <br>
 
+#### Genre List
+
 ```javascript
 {
   "genres": [
@@ -390,6 +392,27 @@ export const Filter = ({
       <Button>All</Button>
       <Button>Comedy</Button>
       <Button>Action</Button>
+    </FilterContainer>
+  );
+};
+```
+
+##### Lets use it
+
+- remember that those numbers have something to do with the list of numbers i added above in the **Genre List**
+
+```javascript
+export const Filter = ({
+  setFiltered,
+  activeGenre,
+  setActiveGenre,
+  popular,
+}) => {
+  return (
+    <FilterContainer>
+      <Button onClick={() => setActiveGenre(0)}> All</Button>
+      <Button onClick={() => setActiveGenre(35)}>Comedy</Button>
+      <Button onClick={() => setActiveGenre(28)}>Action</Button>
     </FilterContainer>
   );
 };
