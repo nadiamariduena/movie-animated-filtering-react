@@ -56,7 +56,7 @@ export const Filter = ({
       movie.genre_ids.includes(activeGenre)
     );
     //
-    setFiltered(filtered);
+    setFiltered(filtered); //
     //
     //
   }, [activeGenre]);

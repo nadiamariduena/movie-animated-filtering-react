@@ -99,7 +99,7 @@ const Home = () => {
       />
       <AddContent>
         <PopularMovies>
-          {popular.map((movie) => (
+          {filtered.map((movie) => (
             <div key={movie.id}>
               <MovieCard movie={movie} />
             </div>

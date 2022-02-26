@@ -545,3 +545,75 @@ export const Filter = ({
 #### result
 
 [<img src="./src/img/preview-filtering-genres.gif"/>]()
+
+<br>
+
+#### Here you can see that when we click on the buttons its workin, but only in the console, the reason for that is because right now, when we "map" we are still using the default: {popular.map( , so nothing is going to update because basically we are looping in the original state "which isnt filtering anything"
+
+```javascript
+useEffect(() => {
+  //  if the user didnt type anything,
+  //  it will stay with the popular movies as default
+  if (activeGenre === 0) {
+    setFiltered(popular);
+    return;
+  }
+  // here we will filter the popular array with the filter(), then once filtered, we will grab the _ids from the array and tell it to get only the ones that includes() all the movies that match with the numbers we have inside the buttons here below
+  const filtered = popular.filter((movie) =>
+    movie.genre_ids.includes(activeGenre)
+  );
+  //
+  setFiltered(filtered);
+  //
+  //
+}, [activeGenre]);
+```
+
+<br>
+<br>
+
+### Change it to this:
+
+#### So lets change that to freshly created filtering, the one we did here
+
+<br>
+
+```javascript
+//          BEFORE
+{
+  popular.map((movie) => (
+    <div key={movie.id}>
+      <MovieCard movie={movie} />
+    </div>
+  ));
+}
+
+//
+//
+//          AFTER
+{
+ ✋ filtered.map((movie) => (
+    <div key={movie.id}>
+      <MovieCard movie={movie} />
+    </div>
+  ));
+}
+```
+
+<br>
+<br>
+
+#### result
+
+- Filtering success!
+
+<br>
+
+[<img src="./src/img/filterin-success.gif"/>]()
+
+<br>
+<br>
+
+---
+
+<br>
