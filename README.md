@@ -114,7 +114,7 @@ const PopularMovies = styled.div`
 
 #### the animation settings
 
-- add the **layout**, first to the parent and then to the child, as you will notice that if you only add it to the parent, **it will cause an ugly image stretching**.
+- add the **layout**, first to the parent and then to the child, which is the **MovieCard.jsx**
 
 <br>
 
@@ -127,3 +127,50 @@ const PopularMovies = styled.div`
   ))}
 </motion.div>
 ```
+
+<br>
+
+#### ⚠️
+
+- as you will notice that if you only add it to the parent, **it will cause an ugly image stretching**.
+
+<br>
+
+[<img src="./src/img/framer-ugly-stretching.gif"/>]()
+
+<br>
+
+<br>
+
+#### Add it to the child
+
+- **MovieCard.jsx**
+
+```javascript
+import React from "react";
+import { motion } from "framer-motion";
+
+const MovieCard = ({ movie }) => {
+  return (
+    <motion.div layout>
+      <h2>{movie.title}</h2>
+      <img
+        src={"https://image.tmdb.org/t/p/w500" + movie.backdrop_path}
+        alt={movie.title}
+      />
+    </motion.div>
+  );
+};
+
+export default MovieCard;
+```
+
+<br>
+
+##### result
+
+- Its okay but you can still add more settings
+
+[<img src="./src/img/fframer-ugly-2.gif"/>]()
+
+<br>
