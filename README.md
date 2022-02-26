@@ -539,3 +539,9 @@ export const Filter = ({
   );
 };
 ```
+
+<br>
+
+#### result
+
+[<img src="./src/img/preview-filtering-genres.gif"/>]()
