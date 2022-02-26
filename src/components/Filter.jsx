@@ -41,7 +41,12 @@ export const Filter = ({
   //
   //
 
-  useEffect(() => {}, [activeGenre]);
+  useEffect(() => {
+    if (activeGenre === 0) {
+      setFiltered(popular);
+      return;
+    }
+  }, [activeGenre]);
 
   //
   //

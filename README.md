@@ -462,3 +462,20 @@ developers tool "components"
 <br>
 
 [<img src="./src/img/2states_useeffect.jpg"/>]()
+
+<br>
+
+#### Next step will be to add a conditional
+
+- In this conditional we will handle the genre identifiers, based on the list i added few steps above
+
+<br>
+
+```javascript
+// If activeGenre is equal to 0 then set the filter "popular", so basically it will be the default, and because of that will not be doing anything.
+//
+if (activeGenre === 0) {
+  setFiltered(popular);
+  return; //when adding the return here, nothing else is going to run!
+}
+```
